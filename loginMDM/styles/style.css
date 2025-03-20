@@ -1,0 +1,154 @@
+:root{
+    --primario :#784D3C;
+
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+} 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: #ecebf0;
+}
+
+.contenedor{
+    max-width: 100rem;
+    width: 90%;
+    margin: 4rem auto;
+   height: 2rem; 
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+/*  */
+
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    
+
+}
+.circle{
+    width: 14rem;
+    height: auto;
+    position: absolute;
+    top: 37rem; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+}
+
+.square{
+    position: absolute;
+    max-width: 20rem;
+    max-height: 20rem;
+    
+    top: 14%; 
+    right: 7%; 
+    
+    
+    
+}
+.card{
+
+    padding: 8rem 4rem;
+}
+
+
+/** CSS para Welcome **/
+.welcome{
+    background-color: #267efc;
+    
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+
+    color: white;
+}
+.welcome .line {
+    width: 25%;
+    height: 2px;
+    background-color: white; 
+    
+}
+.welcome p{
+    text-align: justify;
+}
+
+
+
+.boton{
+    background: none;
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    padding: 1.7rem;
+    border: .2rem solid white;
+    color: white;
+    margin-top: 2rem;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#267efc;
+    transition-duration: .30s;
+}
+
+/** CSS del login **/
+
+.login{
+    background-color: white;
+    text-align: center;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+
+}
+.login h2{
+    color: #838584;
+    margin-bottom: 0;
+
+}
+.login .line{
+    width: 10%;
+    height: 2px;
+    background-color: #267efc; 
+    margin: 0 auto;
+    margin-bottom: 4rem;
+
+}
+
+.label{
+    margin-bottom: 4rem;
+    border: none;
+    border-bottom: .1rem solid #838584;
+    font-size: 2rem;
+}
+
+.submit{
+    margin-top: 4rem;
+    padding: 2rem 8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+
+
+    background-color: #267efc;
+    border-radius: 4rem;
+
+    box-shadow: 0 3px 9px gray;
+}
+
+
+
